@@ -24,7 +24,7 @@
         android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/usernameField"
         android:layout_below="@+id/usernameField"
         android:ems="10"
         android:hint="@string/password_hint"
@@ -34,7 +34,7 @@
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/passwordField"
         android:layout_below="@+id/passwordField"
         android:text="@string/login_button_label" />
 
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="69dp"
         android:text="@string/sign_up_text" />
 
 </RelativeLayout>
