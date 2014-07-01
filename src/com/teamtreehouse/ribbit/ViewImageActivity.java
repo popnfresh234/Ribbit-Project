@@ -1,5 +1,8 @@
 package com.teamtreehouse.ribbit;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
@@ -19,6 +22,15 @@ public class ViewImageActivity extends Activity {
 		Uri imageUri = getIntent().getData();
 		
 		Picasso.with(this).load(imageUri.toString()).into(imageView);
+		
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			
+			@Override
+			public void run() {
+				finish();
+			}
+		}, 10*1000);
 
 	}
 
