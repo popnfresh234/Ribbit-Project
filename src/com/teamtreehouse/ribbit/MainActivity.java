@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
 import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.FragmentTransaction;
@@ -23,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
+
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 
@@ -42,6 +44,7 @@ public class MainActivity extends FragmentActivity implements
 	public static final int FILE_SIZE_LIMIT = 1024*1024*10; //10MB
 
 	protected Uri mMediaUri;
+	
 
 	protected DialogInterface.OnClickListener mDialogListener = new DialogInterface.OnClickListener() {
 
@@ -214,8 +217,10 @@ public class MainActivity extends FragmentActivity implements
 			actionBar.addTab(actionBar.newTab()
 					.setText(mSectionsPagerAdapter.getPageTitle(i))
 					.setTabListener(this));
-		}
+		} 
 	}
+	
+
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
